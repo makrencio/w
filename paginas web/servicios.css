@@ -1,0 +1,208 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* SECCION PARA MANTENIMIENTO */
+section#Manteniento{
+    padding: 40px;
+    text-align: center;
+    background-color: #fff
+    
+}
+section#Mantenimiento h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+section#Mantenimiento p {
+    font-size: 18px;
+    color: #555;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ .cta-button1{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+ }
+ .cta-button1{
+    margin-top: 50px; /* Aumenta este valor para mover el botón más abajo */
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* SECCION PARA CONSULTORIA */
+
+section#Consultorias{
+    padding: 40px;
+    
+    background-color: #f4f4f4;
+}
+section#Consultorias h2{
+    font-size: 36px;
+    margin-bottom: 20px ;
+    text-align: center;
+}
+
+section#Consultorias h3 {
+    padding: auto;
+    font-size: 18px;
+    width: 85%;
+    margin: 20px auto;
+}
+section#Consultorias p {
+    font-size: 18px;
+    color: #555;
+    width: 85%;
+    margin: 10px auto;
+}
+section ul {
+    list-style-type: disc;
+    margin-left: auto;
+    color: #666;
+    width: 90%;
+}
+ .cta-button2{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+ }
+  .cta-button2{
+    margin-top: 50px; /* Aumenta este valor para mover el botón más abajo */
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* SECCION PARA SOPORTE TECNICO */
+section#Soporte {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+}
+section#Soporte h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+section#Soporte p {
+    font-size: 18px;
+    color: #555;
+    width: 85%;
+    margin: 0 auto;
+}
+.cta-button3
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+ }
+ .cta-button3{
+    margin-top: 50px; /* Aumenta este valor para mover el botón más abajo */
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+ /* Estilos para el ícono de WhatsApp */
+ .whatsapp-btn {
+    position: fixed; /* Fijo en pantalla */
+    bottom: 20px; /* A 20px de la parte inferior */
+    right: 20px; /* A 20px del borde derecho */
+    z-index: 100; /* Asegura que esté por encima de otros elementos */
+}
+.whatsapp-btn img {
+    width: 80px; /* Tamaño del ícono */
+    height: 80px;
+    border-radius: 50%; /* Forma circular */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+}
+
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+footer ul li {
+    margin: 0 10px;
+}
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}

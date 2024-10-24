@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+nav ul .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+}
+
+nav ul .submenu li {
+    width: 200px;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+nav ul .submenu li a {
+    padding: 10px;
+}
+
+#accesorios {
+    padding: 20px;
+    text-align: center;
+}
+
+.accesorios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.accesorios-item {
+    background-color: #d1daf0;
+    border: 1px solid #d1daf0;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px; /* Ajusta el tamaño según tus necesidades */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.accesorios-item:hover {
+    transform: translateY(-10px); /* Sobresale cuando se pasa el mouse por encima */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.accesorios-item a {
+    text-decoration: none;
+    color: inherit; /* Mantiene el color del texto de la tarjeta */
+}
+
+.accesorios-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.buy-btn, .details-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.buy-btn:hover, .details-btn:hover {
+    background-color: #0056b3;
+}
+
+.details-btn {
+    background-color: #99a5b0;
+}
+
+.details-btn:hover {
+    background-color: #99a5b0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+footer .social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer .social li {
+    margin: 0 10px;
+}
+
+footer .social a {
+    color: white;
+    text-decoration: none;
+}

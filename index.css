@@ -1,0 +1,320 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Carrusel */
+
+.carousel {
+    position: relative;
+    z-index: 1; /* Asegura que el carrusel esté por detrás del texto */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    width: calc(100% + 40px); /* Ajusta el ancho para tener en cuenta el margen */
+    animation: slide 15s infinite;
+    gap: 20px; /* Añadir espacio entre las imágenes */
+}
+
+.carousel-image {
+    width: calc(100% - 20px); /* Ajusta el ancho de cada imagen según el espacio entre ellas */
+    flex: 1 0 calc(100% - 20px); /* Ajusta para permitir el espacio */
+}
+
+.carousel-image img {
+    width: 100%;
+    height: 80vh; /* O ajusta según lo que necesites */
+    object-fit: cover;
+}
+
+/* Animación del carrusel */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(0); }
+    50% { transform: translateX(-100%); }
+    75% { transform: translateX(-200%); }
+    100% { transform: translateX(-300%); }
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-text {
+    position: absolute;
+    z-index: 2; /* Asegúrate de que este valor sea mayor que el del carrusel */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.text-content {
+    margin-bottom: 300px; /* Ajusta este margen para mover el texto hacia arriba o abajo */
+}
+
+.cta-button {
+    margin-top: 20px; /* Aumenta este valor para mover el botón más abajo */
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px; /* Reduce el margen inferior si es necesario */
+    text-shadow: 
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 red,
+        2px 2px 0 red;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Features section */
+.features {
+    padding: 50px;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1em;
+}
+
+#productos {
+    padding: 20px;
+    text-align: center;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productos-item {
+    background-color: #d1daf0;
+    border: 1px solid #d1daf0;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px; /* Ajusta el tamaño según tus necesidades */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.productos-item:hover {
+    transform: translateY(-10px); /* Sobresale cuando se pasa el mouse por encima */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.productos-item a {
+    text-decoration: none;
+    color: inherit; /* Mantiene el color del texto de la tarjeta */
+}
+
+.productos-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+}
+
+#teclados {
+    padding: 20px;
+    text-align: center;
+}
+
+.teclados-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teclados-item {
+    background-color: #d1daf0;
+    border: 1px solid #d1daf0;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px; /* Ajusta el tamaño según tus necesidades */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.teclados-item:hover {
+    transform: translateY(-10px); /* Sobresale cuando se pasa el mouse por encima */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.teclados-item a {
+    text-decoration: none;
+    color: inherit; /* Mantiene el color del texto de la tarjeta */
+}
+
+.teclados-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.buy-btn, .details-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.buy-btn:hover, .details-btn:hover {
+    background-color: #0056b3;
+}
+
+.details-btn {
+    background-color: #99a5b0;
+}
+
+.details-btn:hover {
+    background-color: #99a5b0;
+}
+
+ /* Estilos para el ícono de WhatsApp */
+ .whatsapp-btn {
+    position: fixed; /* Fijo en pantalla */
+    bottom: 20px; /* A 20px de la parte inferior */
+    right: 20px; /* A 20px del borde derecho */
+    z-index: 100; /* Asegura que esté por encima de otros elementos */
+}
+.whatsapp-btn img {
+    width: 80px; /* Tamaño del ícono */
+    height: 80px;
+    border-radius: 50%; /* Forma circular */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
